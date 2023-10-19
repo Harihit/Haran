@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kanban Board</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="board">
+        <div class="list">
+            <h2>To-Do</h2>
+            <div class="task" draggable="true">
+                <p>Task 1</p>
+            </div>
+            <div class="task" draggable="true">
+                <p>Task 2</p>
+            </div>
+            <!-- Add more tasks here -->
+        </div>
+        <div class="list">
+            <h2>In Progress</h2>
+            <!-- Add tasks that are in progress here -->
+        </div>
+        <div class="list">
+            <h2>Done</h2>
+            <!-- Add tasks that are done here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+.board {
+    display: flex;
+}
+
+
+CSS CODE :- 
+.list {
+    flex: 1;
+    padding: 10px;
+    background: #f8f8f8;
+}
+
+.task {
+    background: #ffffff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: move;
+}
